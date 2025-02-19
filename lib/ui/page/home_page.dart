@@ -58,10 +58,12 @@ class _MyHomePageState extends State<MyHomePage> {
     if (op == 1) {
       setState(() {
         value += 0.1;
+        value= double.parse(value.toStringAsFixed(1));
       });
     } else {
       setState(() {
         value += 1;
+        value= double.parse(value.toStringAsFixed(1));
       });
     }
 
@@ -71,10 +73,12 @@ class _MyHomePageState extends State<MyHomePage> {
     if (op == 1) {
       setState(() {
         value -= 0.1;
+        value= double.parse(value.toStringAsFixed(1));
       });
     } else {
       setState(() {
         value -= 1;
+        value= double.parse(value.toStringAsFixed(1));
       });
     }
 
